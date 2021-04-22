@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Вход"
+        android:textColor="@color/white"
+        android:textSize="22sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="32dp"
+        android:layout_centerInParent="true">
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:layout_centerHorizontal="true"
+        android:text="Добро пожаловать!"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/tv_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_welcome"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Выполните вход \n или зарегистрируйтесь"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_signIn"
+        android:layout_marginTop="32dp"
+        android:background="@color/white"
+        android:hint="Введите вашу почту"
+        android:padding="16dp" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:hint="Введите пароль"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/btn_sign_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:padding="8dp"
+        android:text="Войти"
+        android:textAllCaps="false"
+        android:textSize="22sp"
+        android:layout_below="@id/et_password"/>
+    </RelativeLayout>
+
+</RelativeLayout>
