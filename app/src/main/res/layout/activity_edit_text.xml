@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".EditTextActivity">
+    tools:context=".ThirdActivity">
 
     <EditText
-        android:id="@+id/tv_editext"
+        android:id="@+id/et_number"
         android:layout_width="332dp"
         android:layout_height="64dp"
-        android:text="Введите текст"
         android:textSize="18dp"
+        android:hint="Введите текст"
         android:fontFamily="@font/regular"
         android:padding="18dp"
         android:textColor="#FF6363"
@@ -21,13 +21,14 @@
         android:layout_marginTop="66dp"
         android:background="#C2C2C2"/>
     <Button
+        android:id="@+id/btn2"
         android:layout_width="266dp"
         android:layout_height="72dp"
         android:text="Поменять"
         android:textSize="22sp"
         android:fontFamily="@font/semibold"
         android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/tv_editext"
+        app:layout_constraintTop_toBottomOf="@+id/et_number"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="18dp"

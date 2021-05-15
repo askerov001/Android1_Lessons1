@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Java_6hw">
         <activity android:name=".HomeActivity"></activity>
-        <activity android:name=".EditTextActivity" />
+        <activity android:name=".ThirdActivity" />
         <activity android:name=".SecondActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
